@@ -2,6 +2,14 @@
 
 **Cross-project status scanner that flags what needs your attention.**
 
+<p align="center">
+  <img src="docs/pulse-check-output.png" alt="Pulse Check terminal output" width="700" />
+</p>
+
+<p align="center">
+  <img src="docs/pulse-check-card.png" alt="Pulse Check skill card" width="500" />
+</p>
+
 ## What It Does
 
 Pulse Check scans every active project in your workspace and gives you a single, honest status report. It pulls data from git logs, memory files, Gmail, and Slack -- then classifies everything as on track, at risk, or stalled. It also surfaces unanswered asks from colleagues hiding in your DMs. One command, full situational awareness.
