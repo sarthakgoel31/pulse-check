@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Pulse Check Logo" width="120" />
+</p>
+
 # Pulse Check
 
 **Cross-project status scanner that flags what needs your attention.**
