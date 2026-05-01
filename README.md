@@ -7,11 +7,15 @@
 **Cross-project status scanner that flags what needs your attention.**
 
 <p align="center">
-  <img src="docs/pulse-check-output.png" alt="Pulse Check terminal output" width="700" />
+  <img src="docs/pc1.png" alt="Pulse Check — project status with git activity" width="700" />
 </p>
 
 <p align="center">
-  <img src="docs/pulse-check-card.png" alt="Pulse Check skill card" width="500" />
+  <img src="docs/pc2.png" alt="Pulse Check — people asks and pending items" width="700" />
+</p>
+
+<p align="center">
+  <img src="docs/pc3.png" alt="Pulse Check — follow-ups and risk tiers" width="700" />
 </p>
 
 ## Why
