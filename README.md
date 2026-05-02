@@ -124,6 +124,50 @@ The skill is a Claude Code agent definition that orchestrates git commands, Gmai
 | End-of-month urgency awareness | Live |
 | Graceful degradation | Live |
 
+## Fork This
+
+Use Pulse Check for your own projects in 3 steps:
+
+### Prerequisites
+
+- [Claude Code](https://claude.ai/code) installed
+- Git repositories for the projects you want to track
+- Optional MCP servers: [Gmail](https://github.com/anthropics/claude-code), [Slack](https://github.com/anthropics/claude-code) (works without them -- just scans git + memory)
+
+### Install
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/sarthakgoel31/pulse-check.git
+
+# 2. Copy the skill definition into Claude Code
+mkdir -p ~/.claude/skills/pulse-check
+cp pulse-check/SKILL.md ~/.claude/skills/pulse-check/SKILL.md
+
+# 3. Verify it works
+# In Claude Code, type: /pulse-check
+```
+
+### Customize
+
+Open `SKILL.md` and replace the project list with your own:
+
+```yaml
+# Find this section in SKILL.md and swap in your projects:
+projects:
+  - name: "my-app"
+    path: "/Users/you/projects/my-app"
+  - name: "my-api"
+    path: "/Users/you/projects/my-api"
+```
+
+Also adjust:
+- **Gmail search keywords** -- add project names and teammate emails
+- **Slack channels** -- point to your team's channels
+- **Memory paths** -- point to your `.claude/projects/` directory
+
+Without Gmail or Slack MCP, Pulse Check still works -- it scans git logs and memory files, giving you project health from commit activity alone.
+
 ---
 
 Built by [Sarthak Goel](https://github.com/sarthakgoel31)
